@@ -1,0 +1,17 @@
+<?php
+
+#FUNÇÕES ANÔNIMAS - ESCOPO DE NOMES
+
+$num = 100;
+$num2 = 200;
+
+$func = function() use (&$num, $num2){
+//    echo "Anônima: " . $num ;
+    $num = 1500;
+};
+
+$func();
+
+echo $num;
+
+?>
